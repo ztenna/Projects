@@ -1,0 +1,1 @@
+Given your credentials, after a period of time it will check if you have new emails, if you do, it will make a noise.
