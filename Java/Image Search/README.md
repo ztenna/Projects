@@ -1,0 +1,1 @@
+Search through a given webpage and constructs a list of images it finds.
