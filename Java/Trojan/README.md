@@ -1,0 +1,1 @@
+User plays a game while in the background, file names are being sent to a "server".
