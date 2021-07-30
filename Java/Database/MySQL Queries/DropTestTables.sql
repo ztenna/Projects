@@ -1,0 +1,11 @@
+DROP TABLE `test`.`visit_info`;
+DROP TABLE `test`.`timestamps`;
+DROP TABLE `test`.`vehicles`;
+DROP TABLE `test`.`customers_engaged_with`;
+DROP TABLE `test`.`internet_salespeople`;
+DROP TABLE `test`.`sales_manager`;
+DROP TABLE `test`.`floor_salespeople`;
+DROP TABLE `test`.`staff_works_in`;
+DROP TABLE `test`.`locations`;
+DROP TABLE `test`.`contacts`;
+DROP TABLE `test`.`addresses`;

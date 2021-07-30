@@ -1,0 +1,11 @@
+DROP TABLE `DB_Fall2019_Group4`.`visit_info`;
+DROP TABLE `DB_Fall2019_Group4`.`timestamps`;
+DROP TABLE `DB_Fall2019_Group4`.`vehicles`;
+DROP TABLE `DB_Fall2019_Group4`.`customers_engaged_with`;
+DROP TABLE `DB_Fall2019_Group4`.`internet_salespeople`;
+DROP TABLE `DB_Fall2019_Group4`.`sales_manager`;
+DROP TABLE `DB_Fall2019_Group4`.`floor_salespeople`;
+DROP TABLE `DB_Fall2019_Group4`.`staff_works_in`;
+DROP TABLE `DB_Fall2019_Group4`.`locations`;
+DROP TABLE `DB_Fall2019_Group4`.`contacts`;
+DROP TABLE `DB_Fall2019_Group4`.`addresses`;

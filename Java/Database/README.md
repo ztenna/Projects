@@ -1,0 +1,1 @@
+Program for pretend dealership to keep track of vehicles sold by employees. Accesses a backend database that no longer exists.
