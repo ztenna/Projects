@@ -1,0 +1,1 @@
+Given your credentials, you construct an email and send it to who you want.
