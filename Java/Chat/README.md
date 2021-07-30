@@ -1,0 +1,1 @@
+Chat program to allow multiple users to message each other. If offline, will store messages until user logs back on.
