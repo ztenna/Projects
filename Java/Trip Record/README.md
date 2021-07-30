@@ -1,0 +1,1 @@
+Ambulance service would use this to keep track of what to bill a person for the use of their services.
