@@ -1,0 +1,1 @@
+Kind of a game where stars are drawn, they have a lifespan, gravity, and speed that can be manipulated.
