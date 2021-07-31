@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.RequestsPage"
+             Title="Requests">
+    <StackLayout>
+        <ListView x:Name="requests" ItemTapped="Handle_RequestTapped" CachingStrategy="RecycleElement"></ListView>
+
+        <StackLayout Spacing="0" Padding="0" Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text ="Prev Set" FontSize="14" Clicked="Back_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button Text ="Next Set" FontSize="14" Clicked="Next_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button Text ="Cancel" FontSize="14" Clicked="Cancel_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

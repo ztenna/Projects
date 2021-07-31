@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.MenuPage"
+             Title="Menu Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="10">
+                    
+                    <StackLayout Spacing="0" Padding="0" Orientation="Vertical">
+                        <Button Text="Login" Clicked="LoginPage_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Button Text="Signup" Clicked="Signup_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <!--<Button Text="Maps" Clicked="Maps_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+                        <Button Text="Teacher" Clicked="Teacher_Button_Clicked" HorizontalOptions="Center" VerticalOptions="End"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

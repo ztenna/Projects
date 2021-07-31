@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.PresentationReportDetailPage"
+             Title="Presentation Report Details">
+    <ContentPage.Content>
+		<ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Report ID:" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0" />
+                <Label Text="Email:" FontSize="14" TextColor="Black" Grid.Row="1" Grid.Column="0" />
+                <Label Text="Name:" FontSize="14" TextColor="Black" Grid.Row="2" Grid.Column="0" />
+                <Label Text="Driver:" FontSize="14" TextColor="Black" Grid.Row="3" Grid.Column="0" />
+                <Label Text="Organization Name:" FontSize="14" TextColor="Black" Grid.Row="4" Grid.Column="0" />
+                <Label Text="Contact Person:" FontSize="14" TextColor="Black" Grid.Row="5" Grid.Column="0" />
+                <Label Text="Travel Fee:" FontSize="14" TextColor="Black" Grid.Row="6" Grid.Column="0" />
+                <Label Text="Presentation Date:" FontSize="14" TextColor="Black" Grid.Row="7" Grid.Column="0" />
+                <Label Text="Number of Presentations:" FontSize="14" TextColor="Black" Grid.Row="8" Grid.Column="0" />
+                <Label Text="Number of Activities:" FontSize="14" TextColor="Black" Grid.Row="9" Grid.Column="0" />
+                <Label Text="Every Ambassador did everything exactly the same, together:" FontSize="14" TextColor="Black" Grid.Row="10" Grid.Column="0" />
+                <Label Text="Who did what:" FontSize="14" TextColor="Black" Grid.Row="11" Grid.Column="0" />
+                <Label Text="Who's first presentation was this:" FontSize="14" TextColor="Black" Grid.Row="12" Grid.Column="0" />
+                <Label Text="Who was the audience:" FontSize="14" TextColor="Black" Grid.Row="13" Grid.Column="0" />
+                <Label Text="How interested in the show were the students from 1-4:" FontSize="14" TextColor="Black" Grid.Row="14" Grid.Column="0" />
+                <Label Text="How appropriate was the presentation for the students from 1-4:" FontSize="14" TextColor="Black" Grid.Row="15" Grid.Column="0" />
+                <Label Text="Questions asked by students:" FontSize="14" TextColor="Black" Grid.Row="16" Grid.Column="0" />
+                <Label Text="Were you prepared to answer the questions:" FontSize="14" TextColor="Black" Grid.Row="17" Grid.Column="0" />
+                <Label Text="Aspects of presentation work best for this group:" FontSize="14" TextColor="Black" Grid.Row="18" Grid.Column="0" />
+                <Label Text="Suggestions for improving presentation:" FontSize="14" TextColor="Black" Grid.Row="19" Grid.Column="0" />
+
+                <Label Text="{Binding ReportID}" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="1" />
+                <Label Text="{Binding Email}" FontSize="14" TextColor="Black" Grid.Row="1" Grid.Column="1" />
+                <Label Text="{Binding Name}" FontSize="14" TextColor="Black" Grid.Row="2" Grid.Column="1" />
+                <Label Text="{Binding Driver}" FontSize="14" TextColor="Black" Grid.Row="3" Grid.Column="1" />
+                <Label Text="{Binding OrgName}" FontSize="14" TextColor="Black" Grid.Row="4" Grid.Column="1" />
+                <Label Text="{Binding ContactPerson}" FontSize="14" TextColor="Black" Grid.Row="5" Grid.Column="1" />
+                <Label Text="{Binding TravelFee}" FontSize="14" TextColor="Black" Grid.Row="6" Grid.Column="1" />
+                <Label Text="{Binding PresDate}" FontSize="14" TextColor="Black" Grid.Row="7" Grid.Column="1" />
+                <Label Text="{Binding NumPres}" FontSize="14" TextColor="Black" Grid.Row="8" Grid.Column="1" />
+                <Label Text="{Binding NumActs}" FontSize="14" TextColor="Black" Grid.Row="9" Grid.Column="1" />
+                <Label Text="{Binding SameEverything}" FontSize="14" TextColor="Black" Grid.Row="10" Grid.Column="1" />
+                <Label Text="{Binding AnythingDiff}" FontSize="14" TextColor="Black" Grid.Row="11" Grid.Column="1" />
+                <Label Text="{Binding FirstTime}" FontSize="14" TextColor="Black" Grid.Row="12" Grid.Column="1" />
+                <Label Text="{Binding Audience}" FontSize="14" TextColor="Black" Grid.Row="13" Grid.Column="1" />
+                <Label Text="{Binding EngagedRating}" FontSize="14" TextColor="Black" Grid.Row="14" Grid.Column="1" />
+                <Label Text="{Binding AppropriateRating}" FontSize="14" TextColor="Black" Grid.Row="15" Grid.Column="1" />
+                <Label Text="{Binding AskedQuestions}" FontSize="14" TextColor="Black" Grid.Row="16" Grid.Column="1" />
+                <Label Text="{Binding AnswerQuestions}" FontSize="14" TextColor="Black" Grid.Row="17" Grid.Column="1" />
+                <Label Text="{Binding AspectsWorkBest}" FontSize="14" TextColor="Black" Grid.Row="18" Grid.Column="1" />
+                <Label Text="{Binding PresSuggestions}" FontSize="14" TextColor="Black" Grid.Row="19" Grid.Column="1" />
+            </Grid>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

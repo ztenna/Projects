@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.LoginPage"
+             Title="Login Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="10">
+                    
+                    <!-- Added x:Name to entries so that they can be used in c# code-->
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Username:" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="80"/>
+                        <Editor x:Name="Username" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Password:" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="80"/>
+                        <Entry x:Name ="Password" HorizontalOptions="FillAndExpand" FontSize="14" IsPassword="True"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Vertical">
+                        <Button Text="Login" FontSize="14" Clicked="Login_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>                        
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

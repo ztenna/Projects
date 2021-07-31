@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class= "SPOT_App.TitlePage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <!-- Currently a discord image file because I couldnt get to work other ways, will revisit -->
+        <!-- "https://cdn.discordapp.com/attachments/311224967234846730/559758206843224064/tkus5HnU_400x400.png" -->
+        <ImageButton Source="http://35.245.208.30/spot 2.jpg"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    BackgroundColor="Black"
+                    Clicked="OnImageButtonClicked" />
+    </StackLayout>
+</ContentPage>
