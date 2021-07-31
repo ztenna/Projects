@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.SignupRequestDetailPage"
+             Title="Signup Request Details">
+    <ContentPage.Content>
+		<ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Name:" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0" />
+                <Label Text="Email:" FontSize="14" TextColor="Black" Grid.Row="1" Grid.Column="0" />
+                <Label Text="Phone Number:" FontSize="14" TextColor="Black" Grid.Row="2" Grid.Column="0" />
+                <Label Text="Mailing Address:" FontSize="14" TextColor="Black" Grid.Row="3" Grid.Column="0" />
+                <Label Text="School Currently Attending:" FontSize="14" TextColor="Black" Grid.Row="4" Grid.Column="0" />
+                <Label Text="Major Currently Pursuing:" FontSize="14" TextColor="Black" Grid.Row="5" Grid.Column="0" />
+                <Label Text="How Heard About SPOT:" FontSize="14" TextColor="Black" Grid.Row="6" Grid.Column="0" />
+                <Label Text="Why Become SPOT Presenter:" FontSize="14" TextColor="Black" Grid.Row="7" Grid.Column="0" />
+                <Label Text="Experience Working With Students:" FontSize="14" TextColor="Black" Grid.Row="8" Grid.Column="0" />
+                <Label Text="Situation Where Things Not Go As Planned And Adapted:" FontSize="14" TextColor="Black" Grid.Row="9" Grid.Column="0" />
+                <Label Text="Name of Faculty ProvidingRecommendation Letter:" FontSize="14" TextColor="Black" Grid.Row="10" Grid.Column="0" />
+                <Label Text="Email of Faculty:" FontSize="14" TextColor="Black" Grid.Row="11" Grid.Column="0" />
+                <Label Text="Dietary Restrictions:" FontSize="14" TextColor="Black" Grid.Row="12" Grid.Column="0" />
+                <Label Text="Applicant Status:" FontSize="14" TextColor="Black" Grid.Row="13" Grid.Column="0" />
+                <Label Text="Available To Visit School On:" FontSize="14" TextColor="Black" Grid.Row="14" Grid.Column="0" />
+                <Label Text="Have License:" FontSize="14" TextColor="Black" Grid.Row="15" Grid.Column="0" />
+                <Label Text="Have Car:" FontSize="14" TextColor="Black" Grid.Row="16" Grid.Column="0" />
+                <Label Text="Can Attend Training:" FontSize="14" TextColor="Black" Grid.Row="17" Grid.Column="0" />
+                <Label Text="Gender:" FontSize="14" TextColor="Black" Grid.Row="18" Grid.Column="0" />
+                <Label Text="First in Family to College:" FontSize="14" TextColor="Black" Grid.Row="19" Grid.Column="0" />
+                <Label Text="Is of Hispanic, Latino, or Spanish Origin:" FontSize="14" TextColor="Black" Grid.Row="20" Grid.Column="0" />
+                <Label Text="Race:" FontSize="14" TextColor="Black" Grid.Row="21" Grid.Column="0" />
+                <Label Text="Hometown Community:" FontSize="14" TextColor="Black" Grid.Row="22" Grid.Column="0" />
+                <Label Text="Privacy Policy Agreement: " FontSize="14" TextColor="Black" Grid.Row="23" Grid.Column="0" />
+
+                <Label Text="{Binding Name}" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="1" />
+                <Label Text="{Binding Email}" FontSize="14" TextColor="Black" Grid.Row="1" Grid.Column="1" />
+                <Label Text="{Binding PhoneNumber}" FontSize="14" TextColor="Black" Grid.Row="2" Grid.Column="1" />
+                <Label Text="{Binding Address}" FontSize="14" TextColor="Black" Grid.Row="3" Grid.Column="1" />
+                <Label Text="{Binding School}" FontSize="14" TextColor="Black" Grid.Row="4" Grid.Column="1" />
+                <Label Text="{Binding Major}" FontSize="14" TextColor="Black" Grid.Row="5" Grid.Column="1" />
+                <Label Text="{Binding HearAboutSpot}" FontSize="14" TextColor="Black" Grid.Row="6" Grid.Column="1" />
+                <Label Text="{Binding WhySpotPresenter}" FontSize="14" TextColor="Black" Grid.Row="7" Grid.Column="1" />
+                <Label Text="{Binding ExpWithStudents}" FontSize="14" TextColor="Black" Grid.Row="8" Grid.Column="1" />
+                <Label Text="{Binding NotAsPlanned}" FontSize="14" TextColor="Black" Grid.Row="9" Grid.Column="1" />
+                <Label Text="{Binding RecommendationLetterName}" FontSize="14" TextColor="Black" Grid.Row="10" Grid.Column="1" />
+                <Label Text="{Binding RecommendationLetterEmail}" FontSize="14" TextColor="Black" Grid.Row="11" Grid.Column="1" />
+                <Label Text="{Binding DietaryRestrictions}" FontSize="14" TextColor="Black" Grid.Row="12" Grid.Column="1" />
+                <Label Text="{Binding CurrentApplicantStatus}" FontSize="14" TextColor="Black" Grid.Row="13" Grid.Column="1" />
+                <Label Text="{Binding AvailableToVisit}" FontSize="14" TextColor="Black" Grid.Row="14" Grid.Column="1" />
+                <Label Text="{Binding HaveLicense}" FontSize="14" TextColor="Black" Grid.Row="15" Grid.Column="1" />
+                <Label Text="{Binding HaveCar}" FontSize="14" TextColor="Black" Grid.Row="16" Grid.Column="1" />
+                <Label Text="{Binding CanAttendTraining}" FontSize="14" TextColor="Black" Grid.Row="17" Grid.Column="1" />
+                <Label Text="{Binding Gender}" FontSize="14" TextColor="Black" Grid.Row="18" Grid.Column="1" />
+                <Label Text="{Binding FirstToCollege}" FontSize="14" TextColor="Black" Grid.Row="19" Grid.Column="1" />
+                <Label Text="{Binding OfOrigin}" FontSize="14" TextColor="Black" Grid.Row="20" Grid.Column="1" />
+                <Label Text="{Binding Race}" FontSize="14" TextColor="Black" Grid.Row="21" Grid.Column="1" />
+                <Label Text="{Binding Community}" FontSize="14" TextColor="Black" Grid.Row="22" Grid.Column="1" />
+                <Label Text="{Binding PrivacyPolicy}" FontSize="14" TextColor="Black" Grid.Row="23" Grid.Column="1" />
+
+                <Button Text="Accept Signup Request" FontSize="14" Clicked="AcceptSignupRequest_Button_Clicked" Grid.Row="24" Grid.Column="0"/>
+                <Button Text="Decline Signup Request" FontSize="14" Clicked="DeclineSignupRequest_Button_Clicked" Grid.Row="24" Grid.Column="1"/>
+            </Grid>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

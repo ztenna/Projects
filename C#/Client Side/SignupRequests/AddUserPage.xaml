@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.AddUserPage"
+             Title="Add A New User">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="10">
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Password for New User:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="130"/>
+                        <Entry x:Name ="Password" HorizontalOptions="FillAndExpand" FontSize="14" IsPassword="True"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Upgrade User to Administrator?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="130"/>
+                        <Switch x:Name="IsAdmin" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Spacing="0" Padding="0" HorizontalOptions ="Center" Orientation="Horizontal">
+                    <Button Text="Add User" FontSize="14" Clicked="Add_User_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Button Text="Cancel" FontSize="14" Clicked="Cancel_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

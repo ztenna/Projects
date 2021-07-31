@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.TeacherMenuPage"
+             Title="Teacher Menu Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="10">
+                    
+                    <StackLayout Spacing="0" Padding="0" Orientation="Vertical">
+                        <Button Text="Presentation Request" Clicked="PresentationRequestPage_Button_Clicked" MinimumWidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Button Text="Evaluation" Clicked="Evaluation_Button_Clicked" MinimumWidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

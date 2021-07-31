@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.PresentationPage"
+             Title="Request a Presentation">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="10">
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Name:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="Name" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Organization Name:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OrgName" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Email:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="Email" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Phone Number (No dashes):" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="PhoneNumber" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Alternative Phone Number (No dashes):" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="AltPhoneNumber" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Best Day/Time to Contact You:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="ContactDayTime" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Organization Street:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OrgStreet" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Organization City:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OrgCity" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Orgainzation State:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OrgState" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Organization Zipcode:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OrgZip" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request Any Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="AnyPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request The Invisible Universe 2.0 Presentation (good for middle school or older)" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="InvisiblePres" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request Mountaineer Mentors Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="MentorPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request The Star of Our World Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="StarPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request Water: The Source of Life Presentation (good for all ages) [K-3 specific presentation coming soon!]" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="WaterPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request How to Make a Planet...With Life! Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="PlanetPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request Mars: Past, Present, Future Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="MarsPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request The International Space Station Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="StationPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request Space Telescope: Searching for Other Worlds Presentation" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="TelescopePres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Request NANOGrav: Tuning into Einstein's Universe Presentation (good for high school or older)" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="NANOGravPres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Each presentation is roughly 45 minutes (30 minutes for the interactive slide show and 15 minutes for questions). Four presentations is the max we expect our presenters to do in one day. We recommend smaller groups, but we can accommodate assemblies or even multiple visits if necessary." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Number of Presentation Rotations:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="PresRotations" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Hands on activities are available for groups of 30 students or less. Please refer to descriptions of the hands-on activities we offer here: https://sites.google.com/site/wvaspot/home/hands-on-activities. You can also do these on your own before or after we arrive to enhance the students' experience." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule No Hands-On Component" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="NoHandsOn" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Build a Molecule (30 minutes) - Good for all ages. Best with 'How to Make a Planet... with Life!' presentation." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="BuildMolecule" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Design an Alien (30 minutes) - Good for all ages. Best with 'How to Make a Planet...with Life!' presentation." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="DesignAlien" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Pocket Solar System (20-30 minutes) - Good for all ages and presentations." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="PocketSolSys" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Sizing Up the Moon (30 minutes) - Good for all ages and presentations." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="SizeUpMoon" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Green Bank Telescope Engineering Design Challenge (60-90 minutes) - Good for middle school and older. Best with the 'The Invisible Universe 2.0' presentation." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="TelescopeDesign" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Programming a Robotic Arm (30 minutes) - Good for middle school and older. Best with 'The International Space Station' and 'Mars: Past, Present, Future' presentations." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="RoboticArm" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Electromagnetic War (15-30 minutes) - Good for all ages. Best with the 'The Invisible Universe 2.0' and 'Space Telescopes: Searching for Other Worlds' presentations." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="ElectroWar" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule Build-Your-Own Watershed (30 minutes) - Good for all ages. Best with 'Water: The Source of Life' presentation." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="BuildWatershed" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Schedule A Drop in the Bucket (15-30 minutes) - Good for all ages. Best with 'Water: The Source of Life' presentation." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="DropInBucket" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Grade Levels" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="GradeLevels" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Number of Students:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumberStudents" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Proposed Date and Time:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="ProposedDateTime" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Do you have a projector, blank screen or wall, and dark room?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="ProjectSupplies" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Do you have speakers with laptop plug-in?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="SpeakerSupplies" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Do you have a computer with flash drive plug-in?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="CompSupplies" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Do you have an extension cord?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="CordSupplies" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Do you have a microphone?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="MicSupplies" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Other:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OtherSupplies" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Are you able to provide $50 travel fee for ambassador's travel?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="TravelFee" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;We will provide a Travel Invoice. Please make checks payable to AUI/GBO then mail to Kristine Sharp, Green Bank Observatory P.O. Box 2 Green Bank, WV 24944" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;I understand that SPOT Ambassadors are not employees of any government agency, and I take responsibility for them on school grounds." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Do you agree to the above statement?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="AgreeStatement" IsToggled = "False"  HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Indicate any other concerns or thoughts about SPOT visit:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="Concerns" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Interested in scheduling field trip for presentation at WV college?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="CollegePres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Interested in scheduling Skype virtual presentation?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="SkypePres" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Other:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="AltOtherPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" HorizontalOptions ="Center" Orientation="Horizontal">
+                        <Button Text="Submit" FontSize="14" Clicked="Submit_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Button Text="Cancel" FontSize="14" Clicked="Cancel_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

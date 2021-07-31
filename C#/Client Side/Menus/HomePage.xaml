@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.HomePage"
+             Title="Home Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="0">
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Vertical">
+                        <Button x:Name="signup" Text="Signup Requests" Clicked="Signup_RequestsPage_Button_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false"/>
+                        <Button x:Name="currentUser" Text="Current Users" Clicked="CurrentUsersPage_Button_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="false"/>
+                        <Button x:Name="presentationRequest" Text="Presentation Requests Approve/Deny" Clicked="PresentationRequestsPage_Button_Clicked" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+                        <Button x:Name="presentationReport" Text="Presentation Reports" Clicked="PresentationReportsPage_Button_Clicked" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+                        <Button x:Name="report" Text="Presentation Report" Clicked="PresentationReportingPage_Button_Clicked" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="true"/>
+                        <Button Text="Presentation Requests" Clicked="RequestsPage_Button_Clicked" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Button Text="Change Password" Clicked="Change_Password_Button_Clicked" WidthRequest="150" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Button Text="Logout" Clicked="Logout_Button_Clicked" WidthRequest="100" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="End"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

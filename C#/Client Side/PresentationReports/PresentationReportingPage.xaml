@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SPOT_App.PresentationReportingPage"
+             Title="Presentation Report">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0">
+                <StackLayout Spacing="0" Padding="10">
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Name:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="Name" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Who Drove The Farthest:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="Driver" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Organization Name:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OrgName" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="&#10;Who was the contact person at the organization:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="ContactPerson" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="&#10;Received travel fee directly (SPOT does *NOT* pay travel to Ambassador 1):" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="TravelFeeRecDir" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="No money is needed for this trip (SPOT does *NOT* pay $50 to Ambassador 1):" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="TravelFeeNoNeed" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Teacher needs more information (I will follow up with you via email to find out more information, then I will follow up with the teacher):" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="TravelFeeFollowUp" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Date of Presentation:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="PresDate" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;For the following questions, answer with a digit, 1-8, 8 could mean 8+." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'The Invisible Universe 2.0' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumUniversePres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Water: The Source of Life' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumWaterPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'The Star in Our Lives' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumStarPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'How to Make a Planet... with Life!' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumPlanetPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Mars: Past, Present, Future' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumMarsPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'The International Space Station' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumStationPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Space Telescopes: Searching for Other Worlds' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumTelescopePres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'NANOGrav: Tuning in to Einstein's Universe' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumNANOGravPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Mountaineer Mentors' presentations did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumMentorPres" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Pocket Solar System' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumSolarActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Sizing up the Moon' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumMoonActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'GBT Engineering Design Challenge' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumEngDesignActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Programming a Robotic Arm' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumRobArmActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Electromagnetic War' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumElectroWarActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Design an Alien' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumAlienActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Build a Molecule' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumMoleculeActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'A Drop in the Bucket' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumBucketActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="How many 'Build-Your-Own Watershed' activities did you do:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumWatershedActs" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Everyone presented the same presentation and/or activities the exact same number of times" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="275"/>
+                        <Switch x:Name="SameEverything" IsToggled="False"  HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="&#10;If you did anything different from another Ambassador, please describe exactly who did what:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="AnythingDiff" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="Was this your first time or, if applicable, the other ambassador's first time delivering a PRESENTATION after becoming certified? Answer Yes or No. If Yes, include the name of the ambassador(s) whose first presentation it was.:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="FirstTime" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Number of K-3 Students:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="Num_KTo3_Stu" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Number of 4-5 Students:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="Num_4To5_Stu" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Number of 6-8 Students:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="Num_6To8_Stu" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Number of 9-12 Students:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="Num_9To12_Stu" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Number of College Students:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumCollegeStu" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="Number of Teachers:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="NumTeachers" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"><!--Can be null-->
+                        <Label Text="Describe any other audience members:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="OtherAudience" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;For the next couple questions, answer with a digit, 1-4, 1 being strongly disagree, 4 being strongly agree." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="The students appeared to be engaged and interested in the show:" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name ="EngagedRating" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="The presentation appeared to be appropriate for these students" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="AppropriateRating" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Approximately how many questions did the students ask? Describe the types of questions that were asked (Were they relevant to the topic or more generalized?)" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="AskedQuestions" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                        <Label Text="&#10;Did you feel prepared to answer the questions? If not, what should be done during the training to better prepare students?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="AnswerQuestions" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="&#10;What aspects of the presentation worked best for this group?" TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="AspectsWorkBest" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" Orientation="Horizontal"> <!--Can be null-->
+                        <Label Text="&#10;What suggestions do you have for improving the presentation? Please provide at least one suggestion." TextColor="Black" FontSize="14" HorizontalOptions="Start" VerticalOptions="Center" MinimumWidthRequest="175"/>
+                        <Editor x:Name="PresSuggestions" HorizontalOptions="FillAndExpand" MinimumWidthRequest="260" FontSize="14"/>
+                    </StackLayout>
+
+                    <StackLayout Spacing="0" Padding="0" HorizontalOptions ="Center" Orientation="Horizontal">
+                        <Button Text="Submit" FontSize="14" Clicked="Submit_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Button Text="Cancel" FontSize="14" Clicked="Cancel_Button_Clicked" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
